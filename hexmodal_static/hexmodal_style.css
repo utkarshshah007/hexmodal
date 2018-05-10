@@ -280,7 +280,7 @@ a:hover {
 }
 
 .client-logo {
-  height: 100%;
+  height: auto;
   width: auto;
 }
 
