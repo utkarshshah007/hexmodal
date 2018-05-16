@@ -247,6 +247,12 @@ a:hover {
   padding-bottom: 30px;
 }
 
+.section.how-section {
+  overflow: visible;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
 .section.browser-section {
   z-index: 3;
   overflow: visible;
@@ -287,6 +293,11 @@ a:hover {
 }
 
 .client-logo {
+  height: auto;
+  width: auto;
+}
+
+.how-image {
   height: auto;
   width: auto;
 }
@@ -335,6 +346,11 @@ a:hover {
 }
 
 .intro-section-content-block {
+  margin-top: -115px;
+  padding-top: 25px;
+}
+
+.how-section-content-block {
   margin-top: -115px;
   padding-top: 25px;
 }
@@ -776,6 +792,7 @@ a:hover {
   padding-top: 80px;
   padding-right: 40px;
   padding-left: 40px;
+  padding-bottom: 80px;
 }
 
 .tab-pane-content-block {
@@ -1267,7 +1284,10 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     padding-bottom: 210px;
   }
   .section.intro-section {
-    padding: 70px 45px 130px;
+    padding: 10px 45px 40px;
+  }
+  .section.how-section {
+    padding: 70px 45px 40px;
   }
   .section.all-features {
     padding-top: 60px;
@@ -1291,6 +1311,9 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
   }
   .intro-section-content-block {
     margin-top: -128px;
+  }
+  .how-section-content-block {
+    margin-top: -100px;
   }
   .section-title.capitals {
     font-size: 23px;
@@ -1490,6 +1513,9 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
   .section.intro-section {
     padding: 0px 35px 30px;
   }
+  .section.how-section {
+    padding: 0px 35px 30px;
+  }
   .section.all-features {
     padding-bottom: 70px;
   }
@@ -1524,6 +1550,12 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     width: 100%;
     margin-top: 0px;
     text-align: center;
+  }
+  .how-section-content-block {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+	padding-top: 0px;
   }
   .section-title {
     font-size: 35px;
@@ -1624,6 +1656,7 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     padding-top: 20px;
     padding-right: 0px;
     padding-left: 0px;
+	padding-bottom: 20px;
   }
   .tab-pane-overlay {
     padding: 30px;
@@ -1919,6 +1952,7 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
+	padding-bottom: 10px;
   }
   .tab-pane-overlay {
     background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7) 81%);
@@ -2003,8 +2037,17 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
   }
 
   .section.intro-section {
-    padding: 0px 35px 30px;
+    padding: 0px 35px 70px;
     top: 12px;
+  }
+  
+  .section.how-section {
+    padding: 0px 35px 70px;
+    top: 12px;
+  }
+  
+  .how-section-content-block {
+	padding-top: 10px;
   }
 
   .hero {
