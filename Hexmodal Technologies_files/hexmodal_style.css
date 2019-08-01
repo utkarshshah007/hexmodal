@@ -62,7 +62,6 @@ a:hover {
 .hero_2 {
   position: relative;
   overflow: hidden;
-  height: 100vh;
   background-color: #5c6bc0;
   background-image: -webkit-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
   background-image: -moz-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
@@ -2275,8 +2274,8 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
 
   .margin-container-2 {
     height: 21vh;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
 
   .margin-container-3 {
@@ -2299,4 +2298,11 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     margin-left: 180px;
     margin-right: 180px;
   }
+
+  .problem-container {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+
 }
