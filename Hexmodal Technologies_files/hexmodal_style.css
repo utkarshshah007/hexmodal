@@ -70,7 +70,9 @@ a:hover {
   background-image: linear-gradient(225deg, rgba(20, 30, 86, 0.78), #50888a), url("./office.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
+  text-align:center;
 }
+
 
 .hero._404-hero {
   height: 730px;
@@ -2270,39 +2272,41 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
   .pdf-container {
     margin-left: 150px;
     margin-right: 150px;
+    text-align:center;
   }
 
   .margin-container-2 {
-    height: 21vh;
     margin-left: 20vw;
     margin-right: 20vw;
+    text-align:center;
   }
 
-  .margin-container-3 {
-    height: 12vh;
-    margin-left: 380px;
-    margin-right: 380px;
-  }
+  .graphics-container {
+    text-align:center;
 
+
+  }
   .margin-container-4 {
     margin-left: 250px;
     margin-right: 250px;
+    text-align:center;
   }
 
   .margin-container-5 {
     margin-left: 220px;
     margin-right: 220px;
+    text-align:center;
   }
 
   .margin-container-6 {
     margin-left: 180px;
     margin-right: 180px;
+    text-align:center;
   }
 
   .problem-container {
     margin-left: 150px;
     margin-right: 150px;
+    text-align:center;
   }
-
-
 }
