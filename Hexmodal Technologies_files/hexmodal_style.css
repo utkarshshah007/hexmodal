@@ -1,5 +1,5 @@
 /* ==========================================================================
-   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
+   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
@@ -35,6 +35,34 @@ a:hover {
   padding-top: 200px;
   padding-right: 35px;
   padding-left: 35px;
+  background-color: #5c6bc0;
+  background-image: -webkit-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
+  background-image: -moz-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
+  background-image: -ms-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
+  background-image: -o-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
+  background-image: linear-gradient(225deg, rgba(20, 30, 86, 0.78), #50888a), url("./office.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.hero_inverse {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #5c6bc0;
+  background-image: -webkit-linear-gradient(90deg, rgba(92, 107, 192, .98), #50888a), url("./office2.jpg");
+  background-image: -moz-linear-gradient(90deg, rgba(92, 107, 192, .98), #50888a), url("./office2.jpg");
+  background-image: -ms-linear-gradient(45deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
+  background-image: -o-linear-gradient(45deg, rgba(92, 107, 192, .98), #50888a), url("./office2.jpg");
+  background-image: linear-gradient(180deg, rgba(80, 90, 86, 0.78), #50888a), url("./office2.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.hero_2 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
   background-color: #5c6bc0;
   background-image: -webkit-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
   background-image: -moz-linear-gradient(225deg, rgba(92, 107, 192, .98), #50888a), url("./office.jpg");
@@ -340,6 +368,15 @@ a:hover {
   width: 642px;
   height: auto;
 }
+
+/* .hero-sub-image {
+  position: absolute;
+  left: 400px;
+  top: 0px;
+  z-index: 1;
+  width: 642px;
+  height: auto;
+} */
 
 .hero-buttons-wrapper {
   margin-top: 30px;
@@ -747,6 +784,21 @@ a:hover {
   background-image: -o-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
   background-image: linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
 }
+
+.footer-top-bar-2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 8px;
+  background-image: -webkit-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: -moz-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: -ms-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: -o-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: linear-gradient(90deg, #46ca9b7a, #5c6bc073 50%, #ab47bc75 92%);
+}
+
 
 .tab-button {
   margin-right: 12px;
@@ -2040,12 +2092,12 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     padding: 0px 35px 70px;
     top: 12px;
   }
-  
+
   .section.how-section {
     padding: 0px 35px 70px;
     top: 12px;
   }
-  
+
   .how-section-content-block {
 	padding-top: 10px;
   }
@@ -2088,7 +2140,7 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     padding-right: 35px;
     padding-bottom: 100px;
     padding-left: 35px;
-  }  
+  }
 }
 
 @media (min-width: 760px) and (max-width: 991px) {
@@ -2113,11 +2165,11 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
   }
 
   .logos-wrapper {
-    
+
   }
 
   .logos-row {
-    
+
   }
 
   .logo-column._nf {
@@ -2129,7 +2181,7 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
   }
 
   .logo-block {
-    
+
   }
 
   .section.cta-section {
@@ -2144,7 +2196,7 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
 
 @media (min-width: 992px) {
   .hero {
-    height: 900px;
+    height: 78vh;
   }
 
   .hero-image {
@@ -2152,6 +2204,7 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
     top: -13px;
     width: 598px;
   }
+
 
   .hero-text-block {
     width: 389px;
@@ -2213,5 +2266,37 @@ html.w-mod-js *[data-ix="hide-fixed-navbar"] {
   .tab-button-icon {
     width: auto;
     height: 69px;
+  }
+
+  .pdf-container {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .margin-container-2 {
+    height: 21vh;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .margin-container-3 {
+    height: 12vh;
+    margin-left: 380px;
+    margin-right: 380px;
+  }
+
+  .margin-container-4 {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .margin-container-5 {
+    margin-left: 220px;
+    margin-right: 220px;
+  }
+
+  .margin-container-6 {
+    margin-left: 180px;
+    margin-right: 180px;
   }
 }
