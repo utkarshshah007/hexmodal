@@ -1,0 +1,114 @@
+html { scroll-behavior: smooth; } 
+
+.hex-bg {
+	background-image: linear-gradient(225deg, rgba(20, 30, 86, 0.78), #50888a); 
+	background-color: #5c6bc0;
+}
+
+.elec-bg {
+  background-image: linear-gradient(225deg, rgba(20, 30, 86, 0.78), #50888a), url("electrician-phone.png");
+  background-color: #0d1542;
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 700px) {
+  .elec-bg {
+    background-image: linear-gradient(225deg, rgba(20, 30, 86, 0.78), #50888a), url("electrician-2.png");
+    background-color: #0d1542;
+  }
+}
+
+*:not(.fa){
+  font-family: Lato;
+}
+
+  .logo {
+    height: 37px;
+    margin-left: 17px;
+  }
+
+.btn-light-override:hover {
+  color: #212529!important;
+}
+
+.numberCircle {
+    display:inline-block;
+
+    border-radius:50%;
+    border:2px solid;
+
+    font-size:32px;
+}
+
+.numberCircle:before,
+.numberCircle:after {
+    content:'\200B';
+    display:inline-block;
+    line-height:0px;
+
+    padding-top:50%;
+    padding-bottom:50%;
+}
+
+.numberCircle:before {
+    padding-left:8px;
+}
+.numberCircle:after {
+    padding-right:8px;
+}
+
+.footer-logo {
+  display: block;
+  height: 50px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+
+.footer-title {
+  display: block;
+  width: 420px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer-nav-wrapper {
+  margin-top: 40px;
+}
+
+.footer-nav-link {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-nav-link:hover {
+  color: #46ca9b;
+  text-decoration: underline;
+}
+
+.footer-top-bar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 8px;
+  background-image: -webkit-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: -moz-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: -ms-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: -o-linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+  background-image: linear-gradient(90deg, #46ca9b, #5c6bc0 50%, #ab47bc 92%);
+}
+
+.navbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
