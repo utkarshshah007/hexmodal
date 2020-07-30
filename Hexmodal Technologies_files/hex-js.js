@@ -25,6 +25,10 @@ function nextPrev(n) {
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
   if (n == 1 && !validateForm()) return false;
+
+  // Report to Google Analytics
+  reportToGA();
+
   // Hide the current tab:
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
@@ -77,4 +81,27 @@ function fixStepIndicator(n) {
   }
   //... and adds the "active" class to the current step:
   x[n].className += " active";
+}
+
+function reportToGA() {
+  x = document.getElementsByClassName("tab");
+  switch(currentTab) {
+    case 0:
+      // facility type selection
+      event_name = "facility-type-selected";
+      selection_value = x[currentTab].querySelectorAll('input[type="radio"]:checked')[0].value;
+      dataLayer.push({'event':event_name,'selectionValue':selection_value});
+      break;
+    case 1:
+      event_name = "facility-type-selected";
+      selection_value = x[currentTab].querySelectorAll('input[type="radio"]:checked')[0].value;
+      dataLayer.push({'event':event_name,'selectionValue':selection_value});
+      break;
+    default:
+      // This is the final one, so the form gets submitted anyhow, but lets record anyway just in case.
+      event_name = "contact-info-given";
+      name_value = x[currentTab].querySelectorAll('input[type="text"]')[0].value
+      email_value = x[currentTab].querySelectorAll('input[type="email"]')[0].value
+      dataLayer.push({'event':event_name,'nameValue':name_value, 'emailValue':email_value});
+  }
 }
