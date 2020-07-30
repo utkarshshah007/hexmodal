@@ -93,7 +93,7 @@ function reportToGA() {
       dataLayer.push({'event':event_name,'selectionValue':selection_value});
       break;
     case 1:
-      event_name = "facility-type-selected";
+      event_name = "unit-count-selected";
       selection_value = x[currentTab].querySelectorAll('input[type="radio"]:checked')[0].value;
       dataLayer.push({'event':event_name,'selectionValue':selection_value});
       break;
