@@ -30,7 +30,7 @@ function formSubmit(type) {
     });
     // and the user gets redirected to the requested file
     document.location.href="https://portia.hexmodal.com/pilot-case-study.pdf"
-    //return false;
+    return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
