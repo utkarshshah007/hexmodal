@@ -134,14 +134,14 @@
           </div>
           <div class="modal-body pt-0">
             <p class="font-weight-light"></p>
-            <form action="https://formspree.io/sales@hexmodal.com" method="POST">
+            <form id="leadForm" action="https://formspree.io/sales@hexmodal.com" method="POST">
               <div class="form-group">
                 <input type="text" placeholder="Full Name" class="form-control" id="full_name">
               </div>
               <div class="form-group">
                 <input type="email" placeholder="Business Email" class="form-control" id="email">
               </div>
-              <button type="submit" class="btn btn-success w-100">Submit</button>
+              <button id=popup-submit-button type="submit" class="btn btn-success w-100" onclick="formSubmit('#')">Submit</button>
             </form>
           </div>
         </div>
@@ -154,39 +154,63 @@
       <!-- Navbar Section -->
       <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light px-5">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-              <img class="logo" id="header-logo" src="./Hexmodal Technologies_files/Hexmodal_Name_Logo.png" alt="Hexmodal Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-3">
-                  <a href="./savings.html" class="btn btn-hex" id="navbar-action">Savings Calculator</a>
-                </li>
-              </ul>
-            </div>
+          <a class="navbar-brand" href="#">
+            <img class="logo" id="header-logo" src="./Hexmodal Technologies_files/Hexmodal_Name_Logo.png" alt="Hexmodal Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#benefits">Benefits</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#how_it_works">How It Works</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#impact">Savings</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./savings.html">Pricing</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="./savings.html" class="btn btn-success" id="navbar-action">Learn More</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </header>
 
       <!-- Alternate Main Section -->
-      <div class="row hex-bg">
+      <div class="row main-bg">
         <div class="col">
           <div class="position-relative overflow-hidden p-3 pt-5 mt-5 p-md-5 m-md-3 text-left">
             <div class="row">
-              <div class="col-md-5 p-lg-5 mx-auto align-self-center">
-                <h1 class="text-white font-weight-normal w-100 pb-3">Test All Your Emergency Lighting With One Click</h1>
-                <!--<h3 class="text-white pt-1 font-weight-normal text-center">Automated Testing &amp; Wireless Reporting - No IT required!</h3>-->
-                <a href="./savings.html" class="btn btn-lg btn-hex" id="main-action">Check Pricing and Savings</a>
+              <div class="col-md-4 px-lg-4 mx-auto align-self-center">
+                <h1 class="text-white font-weight-bold w-100 pb-3">Hate Testing Your Emergency Lights?</h1>
+                <p class="text-white pt-1 font-weight-light" style="font-size: larger;">Automate Testing and Save Time with Hexmodal’s Patented Smart Lighting</p>
+                <a href="./savings.html" class="btn btn-lg btn-success" id="main-action">Upgrade</a>
+                <p class="text-white font-weight-light" style="font-style: italic; font-size: smaller;">No IT Needed</p>
               </div>
               <div class="col-md-7 p-lg-5 mx-auto">
                 <img src="./Hexmodal Technologies_files/Exit-Sign-with-ios.png" class="w-100">
               </div>
-              <div class="product-device shadow-sm d-none d-md-block"></div>
-              <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 justify-content-around" style="display: flex;">
+                <script src="https://fast.wistia.com/embed/medias/631ntrndr0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_631ntrndr0 popover=true popoverContent=link" style="display:inline;position:relative">
+                  <a href="#" class="text-white font-weight-light" style="font-size:x-large">View Video <i class="fa fa-chevron-right"></i></a>
+                </span>
+                <a id="case-study-link" href="#" data-toggle="modal" data-target="#exampleModal" class="text-white font-weight-light" style="font-size:x-large">Review Case Study <i class="fa fa-chevron-right"></i></a>
+              </div>
+              <div class="col-md-6 justify-content-around" style="display: flex;">
+                <a id="webinar-link" href="#" data-toggle="modal" data-target="#exampleModal" class="text-white font-weight-light" style="font-size:x-large">Join Webinar <i class="fa fa-chevron-right"></i></a>
+                <a href="./savings.html" class="text-white font-weight-light" style="font-size:x-large">See Demo <i class="fa fa-chevron-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -292,7 +316,7 @@
       </div>-->
 
       <!-- Benefits Section -->
-      <div class="row justify-content-center p-3">
+      <div id="benefits" class="row justify-content-center p-3">
         <div class="col-10 pt-md-5 text-center">
           <div class="row pb-md-5 pt-4 justify-content-center">
             <div class="card-deck">
@@ -333,7 +357,7 @@
       </div>
 
       <!-- Impact Section -->
-      <div class="row hex-bg justify-content-center pb-0 pr-3">
+      <div id="impact" class="row hex-bg justify-content-center pb-0 pr-3">
         <div class="col-md-5 pl-0">
           <img src="./Hexmodal Technologies_files/emergency-light-on.jpg" style="background-size: cover;max-height: 30rem;max-width: 107%">
         </div>
@@ -781,7 +805,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!-- Custom JS -->
-    <!--<script src="./Hexmodal Technologies_files/hex-js.js"></script>-->
+    <script src="./Hexmodal Technologies_files/hex-js.js"></script>
 
   </body>
 </html>
