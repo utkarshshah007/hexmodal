@@ -19,13 +19,13 @@ function formSubmit(type) {
   if (type == '#') {
     //...the form gets submitted as usual:
     document.getElementById("leadForm").submit();
-    return false;
+    //return false;
   } else if (type == 'case-study') {
     //...the form gets submitted as usual:
     document.getElementById("leadForm").submit();
     // and the user gets redirected to the requested file
     document.location.href="https://portia.hexmodal.com/pilot-case-study.pdf"
-    return false;
+    //return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
