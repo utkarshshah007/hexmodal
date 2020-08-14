@@ -21,8 +21,13 @@ function formSubmit(type) {
     document.getElementById("leadForm").submit();
     //return false;
   } else if (type == 'case-study') {
-    //...the form gets submitted as usual:
-    document.getElementById("leadForm").submit();
+    //...the form gets submitted by ajax:
+    $.ajax({
+      url: "https://formspree.io/sales@hexmodal.com",
+      method: "POST",
+      data: {full_name: $('#full_name').value, email: $('#email').value},
+      dataType: "json"
+    });
     // and the user gets redirected to the requested file
     document.location.href="https://portia.hexmodal.com/pilot-case-study.pdf"
     //return false;
