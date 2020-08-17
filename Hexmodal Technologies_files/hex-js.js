@@ -17,17 +17,9 @@ $(function(){
 
 function formSubmit(type) {
   if (type == 'case-study') {
-    // Submit via ajax
-    $.ajax({
-      url: "https://formspree.io/sales@hexmodal.com",
-      method: "POST",
-      data: {full_name: $('#full_name').value, email: $('#email').value},
-      dataType: "json"
-    });
-    // redirect the user gets redirected to the requested file
-    document.location.href="https://portia.hexmodal.com/pilot-case-study.pdf";
-  } else {
-    // Hide the modal
-    $('#exampleModal').modal('hide');
+    // open the requested file
+    window.open('https://portia.hexmodal.com/pilot-case-study.pdf')
   }
+  // Hide the modal
+  $('#exampleModal').modal('hide');
 }
