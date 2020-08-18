@@ -25,12 +25,33 @@ html { scroll-behavior: smooth; }
   background-color: #0d1542;
 }
 
+.main-link {
+	font-size: larger;
+}
+
+.main-link-right {
+	text-align: right;
+}
+.main-link-left {
+	text-align: left;
+}
 /* For width 400px and larger: */
 @media only screen and (min-width: 700px) {
   .elec-bg {
     background-image: linear-gradient(225deg, rgba(20, 30, 86, 0.78), #50888a), url("electrician-2.png");
     background-color: #0d1542;
   }
+
+	.main-link {
+		font-size: x-large;
+	}
+
+	.main-link-right {
+		text-align: inherit;
+	}
+	.main-link-left {
+		text-align: inherit;
+	}
 }
 
 *:not(.fa){
