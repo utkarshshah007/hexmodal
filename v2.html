@@ -134,14 +134,14 @@
           </div>
           <div class="modal-body pt-0">
             <p class="font-weight-light"></p>
-            <form id="leadForm" action="https://formspree.io/sales@hexmodal.com" method="POST">
+            <form action="https://formspree.io/sales@hexmodal.com" method="POST">
               <div class="form-group">
-                <input type="text" placeholder="Full Name" class="form-control" id="full_name" name="full_name">
+                <input type="text" placeholder="Full Name" class="form-control" id="full_name">
               </div>
               <div class="form-group">
-                <input type="email" placeholder="Business Email" class="form-control" id="email" name="email">
+                <input type="email" placeholder="Business Email" class="form-control" id="email">
               </div>
-              <button type="submit" id=popup-submit-button class="btn btn-success w-100">Submit</button>
+              <button type="submit" class="btn btn-success w-100">Submit</button>
             </form>
           </div>
         </div>
@@ -152,8 +152,8 @@
     <div class="container-fluid">
 
       <!-- Navbar Section -->
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light px-5">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light px-5">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img class="logo" id="header-logo" src="./Hexmodal Technologies_files/Hexmodal_Name_Logo.png" alt="Hexmodal Logo">
           </a>
@@ -163,90 +163,57 @@
           <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item mx-3">
-                <a id="nav-benefits" class="nav-link" href="#benefits">Benefits</a>
+                <a class="nav-link" href="#product">Product</a>
               </li>
               <li class="nav-item mx-3">
-                <a id="nav-how-works" class="nav-link" href="#how_it_works">How It Works</a>
+                <a class="nav-link" href="#how_it_works">How It Works</a>
               </li>
               <li class="nav-item mx-3">
-                <a id="nav-savings" class="nav-link" href="#impact">Savings</a>
+                <a class="nav-link" href="#savings">Savings</a>
               </li>
               <li class="nav-item mx-3">
-                <a id="nav-features" class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item mx-3">
-                <a id="nav-pricing" class="nav-link" href="./savings.html">Pricing</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a href="./savings.html" class="btn btn-success" id="navbar-action">Learn More</a>
+                <button class="btn btn-success" type="button" data-toggle="modal" data-target="#exampleModal">Learn More</button>
               </li>
             </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
 
       <!-- Alternate Main Section -->
-      <div class="row main-bg">
+      <div class="row elec-bg hex-bg">
         <div class="col">
-          <div class="position-relative overflow-hidden p-3 pt-5 mt-5 p-md-5 m-md-3 text-left">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left">
+            <div class="row pt-5 justify-content-center">
+              <h1 class="display-4 text-white font-weight-normal text-center w-100">Smart Emergency Lights &amp; Exit Signs</h1>
+              <h3 class="text-white pt-1 font-weight-normal text-center">Never Test Again: Automated Testing &amp; Wireless Reporting - No IT required!</h3>
+            </div>
             <div class="row">
-              <div class="col-md-4 px-lg-4 mx-auto align-self-center">
-                <h1 class="text-white font-weight-bold w-100 pb-3">Hate Testing Your Emergency Lights?</h1>
-                <p class="text-white pt-1 font-weight-light" style="font-size: larger;">Automate Testing and Save Time with Hexmodal’s Patented Smart Lighting</p>
-                <a href="./savings.html" class="btn btn-lg btn-success" id="main-action">Upgrade</a>
-                <p class="text-white font-weight-light" style="font-style: italic; font-size: smaller;">No IT Needed</p>
-              </div>
               <div class="col-md-7 p-lg-5 mx-auto">
-                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./Hexmodal Technologies_files/Exit-Sign-with-ios.png" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./Hexmodal Technologies_files/no-test-crop.png" class="d-block w-100">
-                    </div>
+                <img src="./Hexmodal Technologies_files/Exit-Sign-with-ios.png" class="w-100">
+              </div>
+              <div class="col-md-5 p-lg-5 mx-auto align-self-center">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title text-center mb-0">Get 3 Months Of Free Testing!</h3>
+                    <p class="text-center">Contact Us For More Information</p>
+                    <form action="https://formspree.io/sales@hexmodal.com" method="POST">
+                      <div class="form-group">
+                        <input type="text" placeholder="Full Name" class="form-control" id="full_name" name="full_name" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" placeholder="Business Email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <button type="submit" class="btn btn-success w-100">Sign Up</button>
+                    </form>
                   </div>
                 </div>
               </div>
+              <div class="product-device shadow-sm d-none d-md-block"></div>
+              <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
             </div>
-            <!--<div class="row">
-              <div class="col-md-6 justify-content-around" style="display: flex;">
-                <script src="https://fast.wistia.com/embed/medias/631ntrndr0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_631ntrndr0 popover=true popoverContent=link" style="display:inline;position:relative">
-                  <a id="video-link" href="#" class="text-white font-weight-light" style="font-size:x-large">View Video <i class="fa fa-chevron-right"></i></a>
-                </span>
-                <a id="case-study-link" href="#" data-toggle="modal" data-target="#exampleModal" class="text-white font-weight-light" style="font-size:x-large">Review Case Study <i class="fa fa-chevron-right"></i></a>
-              </div>
-              <div class="col-md-6 justify-content-around" style="display: flex;">
-                <a id="webinar-link" href="#" data-toggle="modal" data-target="#exampleModal" class="text-white font-weight-light" style="font-size:x-large">Join Webinar <i class="fa fa-chevron-right"></i></a>
-                <a id="demo-link"href="./savings.html" class="text-white font-weight-light" style="font-size:x-large">See Demo <i class="fa fa-chevron-right"></i></a>
-              </div>
-            </div>-->
-
-            <div class="row text-center pt-3">
-              <div class="col-6 main-link-left" style="display: flex;">
-                <div class="row w-100">
-                  <div class="col-md py-2">
-                    <script src="https://fast.wistia.com/embed/medias/631ntrndr0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_631ntrndr0 popover=true popoverContent=link" style="display:inline;position:relative">
-                      <a id="video-link" href="#" class="text-white font-weight-light main-link">View Video <i class="fa fa-chevron-right"></i></a>
-                    </span>
-                  </div>
-                  <div class="col-md py-2">
-                    <a id="case-study-link" href="#" data-toggle="modal" data-target="#exampleModal" class="text-white font-weight-light main-link">Review Case Study <i class="fa fa-chevron-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 main-link-right" style="display: flex;">
-                <div class="row w-100">
-                  <div class="col-md py-2">
-                      <a id="webinar-link" href="#" data-toggle="modal" data-target="#exampleModal" class="text-white font-weight-light main-link">Join Webinar <i class="fa fa-chevron-right"></i></a>
-                  </div>
-                  <div class="col-md py-2">
-                    <a id="demo-link"href="./savings.html" class="text-white font-weight-light main-link">See Demo <i class="fa fa-chevron-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -273,7 +240,7 @@
       </div>-->
 
       <!-- Certification Section -->
-      <!-- <div class="row p-3">
+      <div class="row p-3">
         <div class="col">
           <div class="text-center">
             <img src="./Hexmodal Technologies_files/ul.jpg" class="img-fluid">
@@ -289,10 +256,10 @@
             <img src="./Hexmodal Technologies_files/war.jpg" class="img-fluid">
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- Background Info Section -->
-      <!--<div id="background" class="row hex-bg justify-content-center p-3">
+      <div id="background" class="row hex-bg justify-content-center p-3">
           <div class="col-md-9 pt-md-5">
             <div class="col pl-md-5">
               <h3 class="text-white" style="font-size: xx-large;">What do I need to stay in code?</h3>
@@ -312,10 +279,10 @@
               <div class="col-md-4 font-weight-light h4 text-white"><li>State &amp; City Fire Marshals</li></div>
             </div>
           </div>
-      </div>-->
+      </div>
 
       <!-- Problems Section -->
-      <!--<div class="row justify-content-center p-3">
+      <div class="row justify-content-center p-3">
         <div class="col-9 pt-md-5 text-center">
           <h2>Problems with Manual Testing &amp; Records</h2>
           <div class="row pb-md-5 pt-5 mt-4 justify-content-around">
@@ -348,93 +315,10 @@
             </div>
           </div>
         </div>
-      </div>-->
-
-      <!-- Benefits Section -->
-      <div id="benefits" class="row justify-content-center p-3">
-        <div class="col-10 pt-md-5 text-center">
-          <div class="row pb-md-5 pt-4 justify-content-center">
-            <div class="card-deck">
-              <div class="card border-0">
-                <img src="./Hexmodal Technologies_files/test1.png" class="card-img-top w-auto align-self-center pt-4" alt="...">
-                <div class="card-body">
-                  <h2 class="card-title">Ensure Your Lights Are Always Compliant</h2>
-                  <p class="card-text text-muted">Every device runs tests automatically and reports results wirelessly to an online platform.</p>
-                </div>
-                <div class="card-footer border-0 bg-transparent">
-                  <a href="./savings.html" class="btn btn-outline-primary" id="compliance-action">Learn More</a>
-                </div>
-              </div>
-              <div class="card border-0">
-                <img src="./Hexmodal Technologies_files/test2.png" class="card-img-top w-auto align-self-center pt-4" alt="...">
-                <div class="card-body">
-                  <h2 class="card-title">Save Time, Repurpose Labor, &amp; Reduce Costs</h2>
-                  <p class="card-text text-muted">Use your time & labor for more important things. Enjoy 40-60% savings on testing costs.</p>
-                </div>
-                <div class="card-footer border-0 bg-transparent">
-                  <a href="./savings.html" class="btn btn-outline-primary" id="savings-action">Learn More</a>
-                </div>
-              </div>
-              <div class="card border-0">
-                <img src="./Hexmodal Technologies_files/test3.png" class="card-img-top w-auto align-self-center pt-4" alt="...">
-                <div class="card-body">
-                  <h2 class="card-title">Automate Record Keeping &amp; Reporting</h2>
-                  <p class="card-text text-muted">NFPA & JCAHO required reports are generated automatically. Get immedate alerts for any issues.</p>
-                </div>
-                <div class="card-footer border-0 bg-transparent">
-                  <a href="./savings.html" class="btn btn-outline-primary" id="records-action">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Impact Section -->
-      <div id="impact" class="row hex-bg justify-content-center pb-0 pr-3">
-        <div class="col-md-5 pl-0">
-          <img src="./Hexmodal Technologies_files/emergency-light-on.jpg" style="background-size: cover;max-height: 30rem;max-width: 107%">
-        </div>
-        <div class="col-md-7 pt-5 text-center text-white">
-          <h2>Drive Real, Measurable ROI Improvements</h2>
-          <div class="row pt-5 mt-4 justify-content-around">
-            <div class="col-md-4">
-              <div class="text-center text-white">
-                <div>
-                  <h1 class="py-md-2">1,000+ Lights</h1>
-                  <hr class="bg-white my-1 mx-5 my-md-2 mx-md-0">
-                  <h2 class="font-weight-light h4">Automatically Tested Every Month</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 py-md-0 py-5">
-              <div class="text-center">
-                <div>
-                  <h1 class="py-md-2">40-60%</h1>
-                  <hr class="bg-white my-1 mx-5 my-md-2 mx-md-0">
-                  <h2 class="font-weight-light h4">Reduction In Testing Cost</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="text-center">
-                <div>
-                  <h1 class="py-md-2">5,000+ Hours</h1>
-                  <hr class="bg-white my-1 mx-5 my-md-2 mx-md-0">
-                  <h2 class="font-weight-light h4">Not Spent Pushing Buttons</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row py-5 justify-content-center">
-            <a href="./savings.html" class="btn btn-light" id="roi-action">Get Results With Hexmodal</a>
-          </div>
-        </div>
       </div>
 
       <!-- Solution Section -->
-      <!--<div id="product" class="row hex-bg justify-content-center p-3">
+      <div id="product" class="row hex-bg justify-content-center p-3">
         <div class="col-md-9 pt-5 mt-3 mb-4 pl-md-5">
           <div class="row text-center">
             <h1 class="text-white pb-3">What We Offer: <em class="font-weight-light h2">"Automatic Testing & Wireless Reporting."</em></h1>
@@ -463,93 +347,60 @@
             </div>
           </div>
         </div>
-      </div>-->
+      </div>
+
+      <!-- Benefits Section -->
+      <div class="row justify-content-center p-3">
+        <div class="col-9 pt-md-5 text-center">
+          <h2>Advantages of Automatic Testing &amp; Reporting</h2>
+
+          <div class="row pb-md-5 pt-5 mt-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="./Hexmodal Technologies_files/test1.png" class="img-fluid">
+                <div>
+                  <h1 class="py-2">Compliance</h1>
+                  <h2 class="font-weight-light h4">Automatically Meet Fire Code</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="./Hexmodal Technologies_files/test2.png" class="img-fluid">
+                <div>
+                  <h1 class="py-2">Cost Reduction</h1>
+                  <h2 class="font-weight-light h4">Lower Testing Costs</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="./Hexmodal Technologies_files/test3.png" class="img-fluid">
+                <div>
+                  <h1 class="py-2">Ease of use</h1>
+                  <h2 class="font-weight-light h4">Manage Lights Online</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- How It Works Section -->
-      <div id="how_it_works" class="row justify-content-center p-3">
-        <div class="row justify-content-center">
-          <div class="col-9 mt-4">
-            <div class="row justify-content-center pb-4">
-              <h1 class="display-4 font-weight-bold">How It Works</h1>
-            </div>
-            <div class="row py-2 justify-content-center">
-              <a href="./savings.html" class="btn btn-outline-primary" id="demo-action">See A Live Demo</a>
-            </div>
-            <div class="row pb-0">
-              <img src="./Hexmodal Technologies_files/how-it-works.png" class="img-fluid" style="height: intrinsic; width: intrinsic">
-            </div>
+      <div id="how_it_works" class="row hex-bg justify-content-center p-3">
+        <div class="col-9 my-4 text-white">
+          <div class="row justify-content-center pb-4">
+            <h1 class="display-4 font-weight-bold">How It Works</h1>
           </div>
-        </div>
-        <div class="row pb-2 justify-content-center">
-          <div class="col-md-2">
-            <div class="card mb-3 border-0" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-2 text-center my-auto my-lg-2">
-                  <img src="./Hexmodal Technologies_files/number-1.png" class="card-img" alt="..." style="max-width: 3rem;">
-                </div>
-                <div class="col-10">
-                  <div class="card-body">
-                    <p class="card-text text-muted" style="font-size: smaller;">
-                      Devices communicate via low-frequency radio - no wifi used.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card mb-3 border-0" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-2 text-center my-auto my-lg-2">
-                  <img src="./Hexmodal Technologies_files/number-2.png" class="card-img" alt="..." style="max-width: 3rem;">
-                </div>
-                <div class="col-10">
-                  <div class="card-body">
-                    <p class="card-text text-muted" style="font-size: smaller;">
-                      Gateway uses a cellular connection to forward data to Hexmodal Cloud.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card mb-3 border-0" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-2 text-center my-auto my-lg-2">
-                  <img src="./Hexmodal Technologies_files/number-3.png" class="card-img" alt="..." style="max-width: 3rem;">
-                </div>
-                <div class="col-10">
-                  <div class="card-body">
-                    <p class="card-text text-muted" style="font-size: smaller;">
-                      Test results are processed and stored on the Hexmodal Cloud.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 ">
-            <div class="card mb-3 border-0" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-2 text-center my-auto my-lg-2">
-                  <img src="./Hexmodal Technologies_files/number-4.png" class="card-img" alt="..." style="max-width: 3rem;">
-                </div>
-                <div class="col-10">
-                  <div class="card-body">
-                    <p class="card-text text-muted" style="font-size: smaller;">
-                      Tests, reports, &amp; alerts are viewable on web & mobile.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="row pb-5">
+            <img src="./Hexmodal Technologies_files/work-1024x336-01.png" class="img-fluid">
           </div>
         </div>
       </div>
 
       <!-- Smart Tags Section -->
-      <!-- <div class="row justify-content-center m-3 p-3">
+      <div class="row justify-content-center m-3 p-3">
         <div class="col-9">
           <div class="row justify-content-center pb-4">
             <h1>Smart Asset Management</h1>
@@ -568,14 +419,14 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- No IT Section -->
       <div class="row hex-bg text-white justify-content-center p-3">
-        <div class="col-10 pt-md-5 text-center">
+        <div class="col-9 pt-md-5 text-center">
           <h2>No IT Needed: Simple, Independent, Secure</h2>
 
-          <div class="row pb-md-2 pt-5 mt-4 justify-content-around">
+          <div class="row pb-md-5 pt-5 mt-4 justify-content-around">
             <div class="col-md-3">
               <div class="text-center">
                 <img src="./Hexmodal Technologies_files/need1.png" class="img-fluid">
@@ -596,7 +447,7 @@
               <div class="text-center">
                 <img src="./Hexmodal Technologies_files/need3.png" class="img-fluid">
                 <div>
-                  <h2 class="font-weight-light py-2">Works With Existing Software</h2>
+                  <h2 class="font-weight-light py-2">Integrates With Existing Software</h2>
                 </div>
               </div>
             </div>
@@ -608,10 +459,6 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="row py-3 justify-content-center">
-            <a href="./savings.html" class="btn btn-light" id="it-action">Learn How to Get Started</a>
           </div>
 
         </div>
@@ -689,21 +536,6 @@
         </div>
       </div>-->
 
-      <!-- Online Features Section -->
-      <div id="features" class="row justify-content-center m-3 p-3">
-        <div class="col my-3 pt-5 pb-4">
-          <div class="row justify-content-center pb-5">
-            <h1>Hexmodal Online</h1>
-          </div>
-          <div class="row justify-content-center">
-            <img src="./Hexmodal Technologies_files/online-1024x447-2.png" class="img-fluid" style="height: intrinsic; width: intrinsic">
-          </div>
-          <div class="row pt-2 mt-4 justify-content-center">
-            <a href="./savings.html" class="btn btn-outline-primary" id="online-demo-action">See A Live Demo</a>
-          </div>
-        </div>
-      </div>
-
       <!-- Why We're Best Section -->
       <div class="row hex-bg text-white justify-content-center p-3">
         <div class="col-9">
@@ -753,14 +585,23 @@
               </tbody>
             </table>
           </div>
-          <div class="row py-2 justify-content-center">
-            <a href="./savings.html" class="btn btn-hex" id="summary-action">Get Started Today</a>
+        </div>
+      </div>
+
+      <!-- Online Features Section -->
+      <div id="features" class="row justify-content-center m-3 p-3">
+        <div class="col my-3 pt-5 pb-5">
+          <div class="row justify-content-center pb-5">
+            <h1>Hexmodal Online</h1>
+          </div>
+          <div class="row justify-content-center">
+            <img src="./Hexmodal Technologies_files/online-1024x447-2.png" class="img-fluid">
           </div>
         </div>
       </div>
 
       <!-- Reports Section -->
-      <!--<div class="row hex-bg text-white justify-content-center p-3">
+      <div class="row hex-bg text-white justify-content-center p-3">
         <div class="col-9 my-3 pt-5">
           <div class="row justify-content-center pb-4">
             <h1>Automated Monthly Reports</h1>
@@ -769,10 +610,10 @@
             <img src="./Hexmodal Technologies_files/automated1-01.jpg" class="img-fluid">
           </div>
         </div>
-      </div>-->
+      </div>
 
       <!-- Additonal Services Section -->
-      <!--<div class="row justify-content-center">
+      <div class="row justify-content-center">
         <div class="col-9 pt-md-5 text-center">
           <h2>Additional Services Available <br> <em class="font-weight-light h4">&amp; other custom services upon request</em></h2>
 
@@ -804,7 +645,7 @@
           </div>
 
         </div>
-      </div>-->
+      </div>
 
     </div>
 
@@ -812,22 +653,19 @@
       <div class="container">
         <div class="text-center">
           <a itemprop="brand" itemscope itemtype="http://schema.org/Brand" href="http://hexmodal.com/#home" title= "Main Navigation Page" class="w--current ">
-            <img itemprop="logo" class="footer-logo mb-2" src="./Hexmodal Technologies_files/Hexmodal_Name_Logo_wh.png" alt="Hexmodal Logo">
+            <img itemprop="logo" class="footer-logo" src="./Hexmodal Technologies_files/Hexmodal_Name_Logo_wh.png" alt="Hexmodal Logo">
           </a>
-          <div class="row justify-content-center">
-            <div class="col-4 text-right border-right">
-              RI Office <br> <hr class="bg-white">
-              32 Mallard Cove Way. Barrington, RI 02806 <br>
-              P: 401.556.0800
-            </div>
-            <div class="col-4 text-left">
-              NYC Office <br> <hr class="bg-white">
-              57 Maspeth Ave. Brooklyn, NY 11211 <br>
-              P: 818.531.2947
-            </div>
+          <div class="footer-title">
+            Rhode Island Office <br>
+            32 Mallard Cove Way. Barrington, RI 02806 <br>
+            401.556.0800
+            <br><br>
+            Pennsylvania Office <br>
+            2025 Washington Ave. Philadelphia, PA 19146
           </div>
           <div class="footer-nav-wrapper">
             <a class="footer-nav-link" href="mailto:sales@hexmodal.com" title="Contacting Hexmodal Team">sales@hexmodal.com</a>
+            <a class="footer-nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Free Trial</a>
           </div>
         </div>
       </div>
@@ -835,12 +673,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!-- Custom JS -->
-    <script src="./Hexmodal Technologies_files/hex-js.js"></script>
+    <!--<script src="./Hexmodal Technologies_files/hex-js.js"></script>-->
 
   </body>
 </html>
