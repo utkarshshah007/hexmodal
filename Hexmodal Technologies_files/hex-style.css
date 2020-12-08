@@ -1,4 +1,36 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("fonts/gilroy-medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: bold;
+    src: url("fonts/gilroy-semibold.otf") format("opentype");
+}
+
 html { scroll-behavior: smooth; }
+
+.pill-btn {
+  /* background-color: #ddd; */
+  border: none;
+  /* color: black; */
+  padding: .375rem .75rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+	font-family: 'Gilroy'!important
+}
+
+.pill-btn.btn-lg {
+	font-size: 17px;
+}
+
+.btn-ash{color:#fff; background-color: #444DFF; border-color: initial}
+.btn-ash:hover{color:#fff; background-color: #5961FF; text-decoration: none; border-color: initial}
 
 .btn-primary{color:#fff;background-color:#0088ff;border-color:#0088ff}
 
@@ -25,6 +57,14 @@ html { scroll-behavior: smooth; }
   background-color: #0d1542;
 }
 
+.ash-bg {
+	background-image: linear-gradient(90deg,rgba(255,255,255,0.91) 0%,rgba(255,255,255,0.32) 100%),url(http://www.badashcreative.com/wp-content/uploads/Hero-bg2.jpg)!important;
+	background-size: cover;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	height: auto;
+}
+
 .main-link {
 	font-size: larger;
 }
@@ -35,8 +75,42 @@ html { scroll-behavior: smooth; }
 .main-link-left {
 	text-align: left;
 }
-/* For width 400px and larger: */
-@media only screen and (min-width: 700px) {
+
+.main-text {
+	padding-top: 17vh;
+	font-size:6.8vw;
+	max-width: 659px;
+	font-family: 'Gilroy'!important;
+	line-height: 1.2em;
+}
+
+.blurb-text {
+	font-size: 3.3vw;
+	font-family: 'Gilroy'!important;
+	line-height: 1.2em;
+}
+
+/* For width 770px and larger: */
+@media only screen and (min-width: 770px) {
+
+	.main-text {
+		font-size:6.3vw;
+		padding-top: 12vh;
+	}
+
+	.blurb-text {
+		font-size: 22px;
+	}
+
+	.pill-btn.btn-lg {
+		font-size: 1.25rem;
+	}
+
+	.ash-bg {
+		background-image: linear-gradient(90deg,rgba(255,255,255,0.88) 0%,rgba(255,255,255,0.32) 100%),url(http://www.badashcreative.com/wp-content/uploads/Hero-bg2.jpg)!important;
+		background-size: contain;
+	}
+
   .elec-bg {
     background-image: linear-gradient(225deg, rgba(20, 30, 86, 0.78), #50888a), url("electrician-2.png");
     background-color: #0d1542;
@@ -51,6 +125,19 @@ html { scroll-behavior: smooth; }
 	}
 	.main-link-left {
 		text-align: inherit;
+	}
+}
+
+/* For width 900px and larger: */
+@media only screen and (min-width: 980px) {
+	.main-text {
+		font-size:55px;
+		padding-top: 17vh!important;
+	}
+
+	.ash-bg {
+		height: 83vh;
+		background-image: linear-gradient(90deg,rgba(255,255,255,0.16) 0%,rgba(255,255,255,0) 100%),url(http://www.badashcreative.com/wp-content/uploads/Hero-bg2.jpg)!important;
 	}
 }
 
